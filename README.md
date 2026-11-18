@@ -2,11 +2,12 @@
 
 The DreamShield server ingests thermal frames and bedside temperature and humidity readings. It runs FusionNet-50 and a random forest locally to assess blanket coverage, collects evidence over time, and can request an independent vision-language model (VLM) review. Temperature-control rules combine the assessment with SHT31 readings before requesting an infrared command from the Freenove ESP32-S3. The server also hosts the desktop web console and the HTTPS gateway used by the mobile apps.
 
-## Companion apps
+## Companion repositories
 
 | Repository | Compatible release | Role |
 | --- | --- | --- |
 | DreamShield Server (this repository) | v0.1.6 | Local inference, review, temperature control, and the mobile gateway |
+| [DreamShield Freenove firmware](https://github.com/Reizen721/dreamshield-freenove-firmware/tree/v0.9.3) | v0.9.3 | ESP32-S3 control node for SHT31 telemetry and infrared emission |
 | [DreamShield Android](https://github.com/Reizen721/dreamshield-android) | v0.6.1 | Native Android app built with Kotlin, Java, and Jetpack Compose |
 | [DreamShield iOS](https://github.com/Reizen721/dreamshield-ios) | v0.1.1 | Native SwiftUI app |
 
